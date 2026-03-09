@@ -6,6 +6,9 @@ from dotenv import load_dotenv
 import pandas as pd
 import shutil
 
+os.environ["MODEL"] = st.secrets["MODEL"]
+os.environ["GEMINI_API_KEY"] = st.secrets["GEMINI_API_KEY"]
+
 load_dotenv()
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 AGENTS_PATH = os.path.join(BASE_DIR, "iws2/src/iws2/config", "agents.yaml")
