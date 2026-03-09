@@ -1,0 +1,17 @@
+--- CSV: Student Grades ---
+Course Code,Course Name,Semester,Credits,Grade
+CS101,Introduction to Computer Science,Fall 2022,4,A
+MATH201,Calculus II,Fall 2022,3,B+
+ENG101,English Composition,Fall 2022,3,A-
+PHY101,Physics I,Fall 2022,4,B
+HIST210,World History,Fall 2022,3,A
+CS102,Data Structures,Spring 2023,4,A-
+MATH301,Linear Algebra,Spring 2023,3,B+
+ENG201,Advanced Writing,Spring 2023,3,A
+PHY102,Physics II,Spring 2023,4,B-
+CS201,Algorithms,Spring 2023,4,A
+CS301,Databases,Fall 2023,4,A-
+CS302,Operating Systems,Fall 2023,4,B+
+CS303,Software Engineering,Fall 2023,3,A
+MATH401,Differential Equations,Fall 2023,3,B
+

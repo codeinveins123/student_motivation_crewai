@@ -1,0 +1,26 @@
+analyz_history_task:
+  description: >
+   'Analyze the student''s full academic history provided in CSV format.
+    The CSV contains records of courses, semesters, and grades. Your task is to: 1
+    identify weak subjects, 2 detect repeated failures, 3 analyze grade trends across
+    semesters, 4 determine the student''s overall academic stability, 5 highlight
+    the most critical academic risks; Produce a structured academic performance report
+    that can be used by an academic advisor to help the student recover academically.
+  expected_output: >
+   'A structured academic performance report containing: 1 overall
+    GPA trend, 2 weakest subjects, 3 courses with repeated failures, 4 semester-by-semester
+    performance overview, 5 key academic risks;
+  agent: analyst
+create_plan_task:
+  description: >
+   'Using the academic performance report and the student''s personal
+    motivation letter,  design a personalized academic recovery plan. Your plan should:
+    1 prioritize subjects that require the most improvement, 2 propose realistic study
+    strategies, 3 suggest weekly study structure, 4 align academic improvement with
+    the student''s personal goals, 5 include motivational recommendations; The plan
+    should be practical, supportive, and focused on helping the student succeed academically.
+  expected_output: >
+   'A personalized academic recovery plan including: 1 priority subjects
+    to improve, 2 study strategy recommendations, 3 weekly learning schedule, 4 semester
+    improvement plan, 5 motivation alignment with career goals;
+  agent: advisor
