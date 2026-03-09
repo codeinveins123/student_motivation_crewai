@@ -90,3 +90,13 @@ if st.button("Запустить"):
 
     shutil.move(AGENTS_PATH+".bak", AGENTS_PATH)
     shutil.move(TASKS_PATH+".bak", TASKS_PATH)
+
+    PLAN_PATH = os.path.join(BASE_DIR, "iws/plan.txt")  # путь к твоему файлу plan.txt
+
+    if os.path.exists(PLAN_PATH):
+        with open(PLAN_PATH, "r", encoding="utf-8") as f:
+            plan_content = f.read()
+        st.subheader("Содержимое iws/plan.txt:")
+        st.text(plan_content)  # можно st.markdown(plan_content) если есть форматирование
+    else:
+        st.warning(f"Файл {PLAN_PATH} не найден.")
