@@ -4,7 +4,7 @@ import warnings
 
 from datetime import datetime
 
-from iws2.crew import Iws2Crew
+from iws2.crew import Iws2
 
 warnings.filterwarnings("ignore", category=SyntaxWarning, module="pysbd")
 
@@ -17,6 +17,6 @@ def run():
     }
 
     try:
-        Iws2Crew().crew().kickoff(inputs=inputs)
+        Iws2().crew().kickoff(inputs=inputs)
     except Exception as e:
         raise Exception(f"An error occurred while running the crew: {e}")
