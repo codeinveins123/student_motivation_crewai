@@ -1,8 +1,13 @@
 #!/usr/bin/env python
 import sys
 import warnings
-
+from dotenv import load_dotenv
 from datetime import datetime
+import os
+
+load_dotenv()
+
+API_KEY = os.getenv("GEMINI_API_KEY")
 
 from iws2.crew import Iws2
 
