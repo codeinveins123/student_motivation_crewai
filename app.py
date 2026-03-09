@@ -81,7 +81,7 @@ if st.button("Запустить"):
     save_yaml(tasks_data, TASKS_PATH)
 
     st.write("Выполнение...")
-    result = Iws2Crew().crew().kickoff(inputs={'topic': topic, 'current_year': str(datetime.now().year)})
+    result = Iws2().crew().kickoff(inputs={'topic': topic, 'current_year': str(datetime.now().year)})
     st.subheader("Результат:")
     st.markdown(result.raw)
 
